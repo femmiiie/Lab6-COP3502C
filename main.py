@@ -1,9 +1,11 @@
 #Sandro Mocevic
 #10/13/2023
 
+#imports
 from encode import encode
 from decode import decode
 
+#prints menu options
 def menu()->None:
     print("Menu")
     print("-------------")
@@ -12,6 +14,7 @@ def menu()->None:
     print("3. Quit \n")
 
 def main():
+    #get input from user and chooses correct option bases on input
     num, encoded = 0, 0
     while True:
         menu()
@@ -23,7 +26,6 @@ def main():
             print("Your password has been encoded and stored!")
         
         elif option == "2":
-
             print(f"The encoded password is {encoded}, and the original password is {decode(encoded)}")
 
         elif option == "3":
