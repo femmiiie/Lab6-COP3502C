@@ -1,6 +1,10 @@
 #Sandro Mocevic
 #10/13/2023
 
-#adds 33333333 to encode the 8 character number
-def encode(num:int)->int:
-    return num + 33333333
+#shifts password by 3 in each position
+def encode(password:str)->str:
+    ret = ""
+    for i in password:
+        ret += str((int(i) + 3) % 10)
+    return ret
+    
