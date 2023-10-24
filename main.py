@@ -24,6 +24,7 @@ def main():
             num = int(input("Please enter your password to encode: "))
             encoded = encode(num)
             print("Your password has been encoded and stored!")
+
         
         elif option == "2":
             print(f"The encoded password is {encoded}, and the original password is {decode(encoded)}")
